@@ -1,0 +1,27 @@
+{
+  "calmSchemaVersion": "1.0",
+  "name": "API Gateway to Customer Service",
+  "nodes": [
+    {
+      "name": "API Gateway",
+      "type": "apigateway",
+      "metadata": {
+        "description": "Handles API requests from external clients"
+      }
+    },
+    {
+      "name": "Customer Service",
+      "type": "microservice",
+      "metadata": {
+        "description": "Handles customer-related business logic"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "API Gateway",
+      "to": "Customer Service",
+      "type": "uses"
+    }
+  ]
+}
