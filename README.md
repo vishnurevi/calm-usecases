@@ -9,14 +9,13 @@ This repository contains simple, beginner-friendly CALM architecture-as-code exa
 - **Description:** Demonstrates how an API Gateway connects to a Customer Service using CALM JSON.
 - **File:** `api-gateway-customer-service.json`
 
----
 
-## How to Use
+## Use Case 2: Microservice with Database
 
-1. Clone or download this repository.
+- **Description:** Demonstrates a microservice connected to its own database using CALM JSON.
+- **File:** `microservice-database.json`
 
-2. Install CALM CLI (if not already installed):
+- **How to use:** Validate using CALM CLI:
 ```bash
-npm install -g @finos/calm-cli
-
+calm validate -p <pattern>.json -a microservice-database.json
 
