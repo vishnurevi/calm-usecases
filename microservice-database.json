@@ -1,0 +1,27 @@
+{
+  "calmSchemaVersion": "1.0",
+  "name": "Microservice with Database",
+  "nodes": [
+    {
+      "name": "Order Service",
+      "type": "microservice",
+      "metadata": {
+        "description": "Handles order-related business logic"
+      }
+    },
+    {
+      "name": "Order Database",
+      "type": "database",
+      "metadata": {
+        "description": "Stores order information"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Order Service",
+      "to": "Order Database",
+      "type": "uses"
+    }
+  ]
+}
